@@ -18,4 +18,5 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 # Add sepolicy version to support OS upgrade and backward compatibility
 BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 
+-include vendor/cardinal/sepolicy/qcom/sepolicy.mk
 -include vendor/citrus/sepolicy/qcom/sepolicy.mk
