@@ -27,8 +27,8 @@
 /sys/devices(/platform)?/soc\.0/qpnp-vm-bms-[a-z0-9]+/power_supply/bms(/.*)?   u:object_r:sysfs_battery_supply:s0
 
 # Graphics
-/sys/devices(/platform)?/soc\.0/[a-z0-9]+.qcom,mdss_mdp/qcom,mdss_fb_primary\.[0-9]+/leds/lcd-backlight(/.*)?   u:object_r:sysfs_graphics:s0
-/sys/devices(/platform)?/soc\.0/[a-z0-9]+.qcom,mdss_mdp/caps   u:object_r:sysfs_graphics:s0
+/sys/devices(/platform)?/soc\.0/[a-z0-9]+\.qcom,mdss_mdp/qcom,mdss_fb_primary\.[0-9]+/leds/lcd-backlight(/.*)?  u:object_r:sysfs_graphics:s0
+/sys/devices(/platform)?/soc\.0/[a-z0-9]+\.qcom,mdss_mdp/caps                 u:object_r:sysfs_graphics:s0
 
 # Subsys restart
 /sys/devices(/platform)?/soc\.0/[a-z0-9\.:]+,[a-z0-9\-]+(\.[0-9]+)?/subsys[0-9]+/name  u:object_r:sysfs_ssr:s0
@@ -38,9 +38,9 @@
 /sys/devices/[0-9a-f]+\.qcom,venus/subsys[0-9]+/name                          u:object_r:sysfs_ssr:s0
 
 # Camera
-/data/fdAlbum                                                       u:object_r:camera_data_file:s0
-/sys/devices(/platform)?/soc\.0/[0-9a-f]+\.qcom,msm-cam/video4linux/video[0-33]/name(/.*)?  u:object_r:sysfs_graphics:s0
-/sys/devices(/platform)?/soc\.0/[0-9a-f]+\.qcom,cci/[0-9]+\.qcom,camera/video4linux/video[0-33]/name(/.*)?  u:object_r:sysfs_graphics:s0
+/data/fdAlbum                                                                 u:object_r:camera_data_file:s0
+/sys/devices(/platform)?/soc\.0/[0-9a-f]+\.qcom,msm-cam/video4linux/video[0-9]+/name(/.*)?  u:object_r:sysfs_graphics:s0
+/sys/devices(/platform)?/soc\.0/[0-9a-f]+\.qcom,cci/[0-9]+\.qcom,camera/video4linux/video[0-9]+/name(/.*)?  u:object_r:sysfs_graphics:s0
 
 # UIO
 /sys/devices(/platform)?/soc\.0/[0-9a-f]+\.qcom,msm-core/uio/uio[0-9]+(/.*)?			u:object_r:sysfs_uio_file:s0
