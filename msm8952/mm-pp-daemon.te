@@ -25,11 +25,11 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-allow mm-pp-daemon { surfaceflinger_service sensorservice_service
-    permission_service power_service }:service_manager find;
+#allow mm-pp-daemon { surfaceflinger_service sensorservice_service
+#    permission_service power_service }:service_manager find;
 
-binder_use(mm-pp-daemon)
+#binder_use(mm-pp-daemon)
 binder_call(mm-pp-daemon, surfaceflinger)
 
 allow mm-pp-daemon ion_device:chr_file write;
-allow mm-pp-daemon system_server:unix_stream_socket rw_socket_perms;
+#allow mm-pp-daemon system_server:unix_stream_socket rw_socket_perms;
